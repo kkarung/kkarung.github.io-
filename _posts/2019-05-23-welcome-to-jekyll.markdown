@@ -2,7 +2,6 @@
 layout: post
 title:  "Hello, Jekyll"
 date:   2019-05-23 21:03:36 +0530
-last_modified_at: 2019-09-13T08:06:00-05:00
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 
