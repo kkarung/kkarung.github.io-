@@ -17,7 +17,7 @@ sass:
 permalink: /posts/:title/
 texture:
   title: HELLO WORLD
-  tagline: \#STUDENT #HACKING #DEV
+  tagline: STUDENT/HACKING/DEV
   date_format: "%b %-d, %Y"
   style: black
   showNav: false
