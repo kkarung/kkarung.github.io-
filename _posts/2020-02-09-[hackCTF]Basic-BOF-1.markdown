@@ -32,8 +32,6 @@ hackCTF pwnable 첫번째 문제
 payload를 v5까지 덮을 수 있도록 만들자.
 
 
-
-
 ## exploit.py
 ***
 ```
@@ -48,6 +46,5 @@ payload를 v5까지 덮을 수 있도록 만들자.
 
   p.interactive()
 ```
--559038737는 hex로 0xDEADBEEF다. p32 방식으로 패킹해서 payload를 만들면 끗.
-
+-559038737는 hex로 0xDEADBEEF다. p32 방식으로 패킹해서 payload를 만들면 끗.  
 p32 : little endian 방식으로 패킹해줌 (u32 : 언패킹)
