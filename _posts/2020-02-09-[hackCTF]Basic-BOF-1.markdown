@@ -7,7 +7,7 @@ hackCTF pwnable 첫번째 문제
 
 ## ida
 ***
-
+```
   int __cdecl main(int argc, const char **argv, const char **envp)
   {
     char s; // [esp+4h] [ebp-34h]
@@ -26,10 +26,10 @@ hackCTF pwnable 첫번째 문제
       puts("Shell closed! Bye.");
     }
     return 0;
-
+```   
 코드를 보면 v5가 -559038737일 때 shell을 실행할 수 있다.   
 우리가 직접 수정할 수 있는 건 s이다.   
-payload를 v5까지 덮을 수 있도록 만들자.   
+payload를 v5까지 덮을 수 있도록 만들자.      
 
 ## exploit.py
 ***
