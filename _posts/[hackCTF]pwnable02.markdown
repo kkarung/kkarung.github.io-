@@ -8,7 +8,7 @@ hackCTF pwnable 두번째 문제
 
 ### ida - main
 ***
-```
+```c
 int __cdecl main(int argc, const char **argv, const char **envp)
 {
   char s; // [esp+Ch] [ebp-8Ch]
@@ -22,7 +22,7 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 ```
 ### ida - sup
 ***
-```
+```c
 int sup()
 {
   return puts(&s); // s에 저장된 문자열 출력
@@ -31,7 +31,7 @@ int sup()
 
 ### ida - shell
 ***
-```
+```c
 int shell()
 {
   return system("/bin/dash"); // 목표!
@@ -42,7 +42,7 @@ fgets로 133바이트를 입력 받을 때 v5에 shell의 주소로 덮으면 v5
 
 ### exploit.py
 ***
-```
+```python
 
 ```
 문제 해결

