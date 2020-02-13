@@ -6,7 +6,7 @@ date:   2020-02-09
 
 hackCTF pwnable 두번째 문제
 
-!(favicon)(https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
+![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
 
 ### ida - main
 ***
@@ -36,7 +36,7 @@ int sup()
 ```c
 int shell()
 {
-  return system("/bin/dash"); // 목표!
+  return system("/bin/dash");
 }
 ```
 // 그냥 함수 실행했을 때 이미지 출력  
