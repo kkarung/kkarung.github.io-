@@ -29,8 +29,6 @@ hackCTF pwnable 첫번째 문제
     }
     return 0;
 ```
-##보호기법 체크  
-![0101](https://drive.google.com/uc?id=1CqTVqx5cQEIn_xQpeUh2mQMNKCf5ZosJ)
 
 ***
 메모리 구조를 정리해보자.
@@ -62,8 +60,10 @@ payload를 v5까지 덮을 수 있도록 만들자.
 
   p.interactive()
 ```
--559038737는 hex로 0xDEADBEEF다. p32 방식으로 패킹해서 payload를 만들면 끝.
 
+-559038737는 hex로 0xDEADBEEF다. 40byte를 아무 값으로 채운다음 p32 방식으로 패킹해서 payload를 만들면 된다.
+
+## 결과  
 ![0102](https://drive.google.com/uc?id=1DCHfkrbOkWFKlbtl9krspfNhFJzKnpQU)
 
 
