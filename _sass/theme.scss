@@ -36,7 +36,7 @@ a {
 
 
 h1, h2, h3 {
-	line-height: 1.2em;
+	line-height: 2.2em;
 }
 
 h1 {
@@ -66,7 +66,7 @@ header {
 	overflow: hidden;
 	h2 {
 		font-weight: normal;
-		margin-top: 5px;
+		margin-top: 15px;
 	}
 	h1 {
 		margin: 0;
@@ -110,7 +110,7 @@ header {
 	}
 
 	@media screen and  (max-width: $mobileWidth) {
-		margin:0 15px; 
+		margin:0 15px;
 		div.highlighter-rouge {
 			right: 15px;
 		}
@@ -120,7 +120,7 @@ header {
 	}
 
 	@media screen and (max-width: $tabWidth) and (min-width: $mobileWidth){
-		margin:0 40px;	
+		margin:0 40px;
 		div.highlighter-rouge {
 			right: 40px;
 		}
