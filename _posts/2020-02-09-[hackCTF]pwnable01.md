@@ -42,8 +42,8 @@ hackCTF pwnable 첫번째 문제
 | ... |          |
 | esp | esp+0    |
 
-
-취약점 : fgets()&s, 45, stdin)  
+***
+취약점 : fgets(&s, 45, stdin)  
 목표 : v5  
 ∴ payload를 v5까지 덮을 수 있도록 만들자.
 
