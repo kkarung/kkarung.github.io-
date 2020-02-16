@@ -8,7 +8,7 @@ hackCTF pwnable 첫번째 문제
 
 ![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
 
-### ida
+## ida
 ```c
   int __cdecl main(int argc, const char **argv, const char **envp)
   {
@@ -48,7 +48,7 @@ hackCTF pwnable 첫번째 문제
 ∴ payload를 v5까지 덮을 수 있도록 만들자.
 
 
-### exploit.py
+## exploit.py
 ```python
   #!/usr/bin/python
   from pwn import *
