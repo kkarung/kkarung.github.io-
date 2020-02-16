@@ -32,6 +32,7 @@ hackCTF pwnable 첫번째 문제
 <br>
 
 메모리 구조를 정리해보자.<br><br>
+
 ***
 | ebp |          |
 |:---:|:--------:|
@@ -43,6 +44,7 @@ hackCTF pwnable 첫번째 문제
 | esp | esp+0    |
 
 ***
+
 <br>
 취약점 : fgets(&s, 45, stdin)<br>
 목표 : v5<br><br>
