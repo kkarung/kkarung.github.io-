@@ -8,7 +8,7 @@ hackCTF pwnable 두번째 문제
 
 ![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
 
-### ida - main
+## ida - main
 ***
 ```c
 int __cdecl main(int argc, const char **argv, const char **envp)
@@ -22,7 +22,7 @@ int __cdecl main(int argc, const char **argv, const char **envp)
   return 0;
 }
 ```
-### ida - sup
+## ida - sup
 ***
 ```c
 int sup()
@@ -31,7 +31,7 @@ int sup()
 }
 ```
 
-### ida - shell
+## ida - shell
 ***
 ```c
 int shell()
@@ -39,7 +39,10 @@ int shell()
   return system("/bin/dash"); // 쉘을 띄울 수 있다!
 }
 ```
-정리해보자.
+
+메모리 구조를 정리해보자.<br><br>
+
+***
 
 | ebp |          |
 |:---:|:--------:|
@@ -50,15 +53,19 @@ int shell()
 | ... |          |
 | esp |   esp+0  |
 
+***
 
-목표 : shell 함수 실행  
-취약점 : fgets(&s, 133, stdin)  
+<br>
+목표 : shell 함수 실행 <br>
+취약점 : fgets(&s, 133, stdin)<br><br>
 ∴ v5를 shell의 주소로 덮어 shell()을 실행시키자.
 
+
++) 쉘의 주소는 다음과 같다.  
 ![0201](https://drive.google.com/uc?id=18Rgv1QIq_0rxABl08a1KZjNBc3GLtHi4)
 
 
-### exploit.py
+## exploit.py
 ***
 ```python
 #!/usr/bin/python
