@@ -29,10 +29,10 @@ hackCTF pwnable 첫번째 문제
     }
     return 0;
 ```
+<br>
 
+메모리 구조를 정리해보자.<br><br>
 ***
-메모리 구조를 정리해보자.
-
 | ebp |          |
 |:---:|:--------:|
 | ... |          |
@@ -43,8 +43,9 @@ hackCTF pwnable 첫번째 문제
 | esp | esp+0    |
 
 ***
-취약점 : fgets(&s, 45, stdin)  
-목표 : v5  
+<br>
+취약점 : fgets(&s, 45, stdin)<br>
+목표 : v5<br><br>
 ∴ payload를 v5까지 덮을 수 있도록 만들자.
 
 
