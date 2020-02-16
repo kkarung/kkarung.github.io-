@@ -8,7 +8,7 @@ hackCTF pwnable 첫번째 문제
 
 ![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
 
-## ida
+### ida
 ```c
   int __cdecl main(int argc, const char **argv, const char **envp)
   {
@@ -36,18 +36,19 @@ hackCTF pwnable 첫번째 문제
 | ebp |          |
 |:---:|:--------:|
 | ... |          |
-| v5 (67305985) | esp+0x2C |
+|  v5 (67305985) / | esp+0x2C |
 | ... |          |
 | s   | esp+0x4  |
 | ... |          |
 | esp | esp+0    |
 
 
-우리가 직접 수정할 수 있는 건 s인데 v5 값을 바꿔야 한다.  
-payload를 v5까지 덮을 수 있도록 만들자.
+취약점 : fgets()&s, 45, stdin)  
+목표 : v5  
+∴ payload를 v5까지 덮을 수 있도록 만들자.
 
 
-## exploit.py
+### exploit.py
 ```python
   #!/usr/bin/python
   from pwn import *
@@ -61,7 +62,7 @@ payload를 v5까지 덮을 수 있도록 만들자.
   p.interactive()
 ```
 
--559038737는 hex로 0xDEADBEEF다. 40byte를 아무 값으로 채운다음 p32 방식으로 패킹해서 payload를 만들면 된다.
+-559038737는 16진수로 변환하면 0xDEADBEEF가 된다. 40byte를 아무 값으로 채운다음 p32 방식으로 0xDEADBEEF 값을 패킹해 payload 값을 만든다.
 
 ## 결과  
 ![0102](https://drive.google.com/uc?id=1DCHfkrbOkWFKlbtl9krspfNhFJzKnpQU)

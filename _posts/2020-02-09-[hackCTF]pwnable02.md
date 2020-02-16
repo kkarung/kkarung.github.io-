@@ -51,9 +51,11 @@ int shell()
 | esp |   esp+0  |
 
 
-shell 함수를 실행하면 쉘을 띄울 수 있다. fgets로 133바이트를 입력 받을 때 v5를 shell의 주소로 덮으면 v5()를 실행했을 때 shell 함수가 실행된다.
+목표 : shell 함수 실행  
+취약점 : fgets(&s, 133, stdin)  
+∴ v5를 shell의 주소로 덮어 shell()을 실행시키자.
 
-![0201](https://drive.google.com/uc?id=1jGne8Jn_lJQK0Vm3wUtljgddfTBMbMoi)
+![0201](https://drive.google.com/uc?id=18Rgv1QIq_0rxABl08a1KZjNBc3GLtHi4)
 
 
 ### exploit.py
@@ -70,5 +72,5 @@ p.sendline(payload)
 
 p.interactive()
 ```
-
+## 결과  
 ![0202](https://drive.google.com/uc?id=1GApVrN8IkoCUKXN559Ldluu8rjXOXgtH)
