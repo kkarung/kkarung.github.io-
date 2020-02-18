@@ -67,8 +67,8 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 
 ![0701](https://drive.google.com/uc?id=1VZWXdm7SKHOD-4lvLfeVyF5fLRko5Z4Z)  
 실제로 실행해보면 좀 더 명확히 알 수 있다.<br><br>
-지난 6번 문제와 동일하게 s의 주소를 알아낸 뒤 쉘코드를 포함한 payload를 완성하면 될 것 같다. 주의해야 할 점은 서버와 나 사이에 데이터 핑퐁이 잘 되어야 한다는 점이다. 이를 위해서 recvuntil함수를 자주 사용하기로 했다.<br><br>
-목표 : 계속 변하는 s의 주소로 ret을 덮는 payload 완성하기<br>
+지난 6번 문제와 동일한 조건이므로 s의 주소를 알아낸 뒤 쉘코드를 포함한 payload를 완성하면 될 것 같다. 주의해야 할 점은 서버와 나 사이에 데이터 핑퐁이 잘 되어야 한다는 점이다. 이를 위해서 recvuntil함수를 자주 사용하기로 했다.<br><br>
+목표 : s의 주소를 서버로 부터 받아 ret을 덮는 payload 완성하기<br>
 취약점 : scanf(" %[^\n]s", s)<br><br><br>
 
 ## exploit.py
