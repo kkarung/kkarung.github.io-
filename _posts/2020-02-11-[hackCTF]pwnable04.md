@@ -16,9 +16,9 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 
   setvbuf(stdout, 0, 2, 0);
   printf("Name : ");
-  read(0, &name, 0x32u);
+  read(0, &name, 0x32u); // stdin으로부터 0x32바이트를 받아 name에 저장
   printf("input : ");
-  gets(&s);
+  gets(&s); // stdin에서 입력 받아 s에 저장
   return 0;
 }
 ```
@@ -33,7 +33,7 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 |   sfp   |  (4byte) |
 |   ebp   | esp+0x14 |
 |   ...   |          |
-| s (esp) |          |
+| s (esp) |    esp   |
 
 ***
 <br>
