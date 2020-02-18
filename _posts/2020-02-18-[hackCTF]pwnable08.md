@@ -47,7 +47,7 @@ int one()
 }
 ```
 
-#ida - print_flag
+## ida - print_flag
 ```c
 int print_flag()
 {
@@ -62,7 +62,7 @@ int print_flag()
 }
 ```
 
-#ida - two
+## ida - two
 ```c
 int two()
 {
@@ -86,6 +86,7 @@ select_func에서 src의 값을 dest에 저장할 때 print_flag함수 주소로
 목표 : 계속 변하는 v4의 주소로 ret을 덮는 payload 완성하기<br>
 취약점 : gets(&v4)<br><br><br>
 +) print_flag Offset
+
 ![0801](https://drive.google.com/uc?id=1KA2RAABGsf9_88UeDV2rig8vzczPHF_X)
 
 ## exploit.py
