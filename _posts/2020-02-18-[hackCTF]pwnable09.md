@@ -53,7 +53,7 @@ void j0n9hyun()
   }
 }
 ```
-welcome함수 scanf에서 ret까지 덮으면 될 것 같다.<br><br>
+welcome함수 scanf에서 ret까지 덮어 j0n9hyun 함수를 실행시키면 될 것 같다.<br><br>
 ![0901](https://drive.google.com/uc?id=1ZwKH2ER8FIFKTDodoJn65xziNKzyQNkg)  
 PIE가 걸려 있고 파일을 실행시키면 welcome 함수의 주소를 제공하므로 j0n9hyun 함수의 정확한 주소를 구할 수 있다.  
 j0n9hyun 함수의 주소 = welcome 함수의 주소 + (j0n9hyun offset - welcome offset)
