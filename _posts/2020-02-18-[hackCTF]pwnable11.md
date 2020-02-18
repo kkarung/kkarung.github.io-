@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "[hackCTF]BOF_PIE"
+title:  "[hackCTF]RTL_World"
 date:   2020-02-18
 ---
 
-hackCTF pwnable 9번째 문제
+hackCTF pwnable 11번째 문제
 
 ![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
 
@@ -77,7 +77,7 @@ int __cdecl main(int argc, const char **argv, const char **envp)
         break;
       case 5:
         printf("[Attack] > ");
-        read(0, &buf, 0x400u);
+        read(0, &buf, 0x400u); // 취약점!
         return 0;
       case 6:
         puts("Your Not Hero... Bye...");
@@ -166,7 +166,7 @@ int Menu()
 }
 ```
 
-기초적인 rtl 문제이다. 2번 메뉴에서 gold를 획득한 다음 3,4번 메뉴에서 system과 shell의 주소를 알아낸다. payload를 완성하면 5번 메뉴에서 공격할 수 있다.  
+기초적인 RTL 문제. main의 2번 메뉴에서 gold를 획득한 다음 3,4번 메뉴에서 system과 shell의 주소를 알아낸다. payload를 완성하면 5번 메뉴에서 공격할 수 있다.  
 ASLR이 적용되어 있으므로 exploit.py에서 system과 shell 주소를 알아내야 한다는 점을 참고하자.
 
 
