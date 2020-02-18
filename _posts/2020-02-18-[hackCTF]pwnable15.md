@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[hackCTF]1996"
+title:  "[hackCTF]Random key"
 date:   2020-02-18
 ---
 
