@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[hackCTF]x64 Simple_size_BOF"
-date:   2020-02-11
+date:   2020-02-18
 ---
 
 hackCTF pwnable 여섯번째 문제
