@@ -9,7 +9,7 @@ hackCTF pwnable 네번째 문제
 ![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
 
 ## ida - main
-```C
+```c
 int __cdecl main(int argc, const char **argv, const char **envp)
 {
   char s; // [esp+0h] [ebp-14h]
@@ -36,10 +36,10 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 | s (esp) |          |
 
 ***
-
+<br>
+이번에는 read와 gets를 통해 입력 받을 수 있다. read를 통해 name에 쉘코드를 작성하고 gets를 통해 main 함수의 에필로그 과정에서 ret 대신 name의 쉘코드를 실행시키자<br><br>
 목표 : name에 쉘코드 작성 + ret을 name의 주소로 덮기<br>
-취약점 : gets(&s)<br><br>
-이번에는 read와 gets를 통해 입력 받을 수 있다. read를 통해 name에 쉘코드를 작성하고 gets를 통해 main 함수의 에필로그 과정에서 ret 대신 name의 쉘코드를 실행시키자<br><br><br>
+취약점 : gets(&s)<br><br><br>
 +) name의 주소는 다음과 같이 .bss영역에 위치한다. 초기값이 없는 전역변수인 모양<br>
 ![0401](https://drive.google.com/uc?id=14EaC2vWFLHK-FQc2rLPv8xVBi1ZY0H7m)
 
