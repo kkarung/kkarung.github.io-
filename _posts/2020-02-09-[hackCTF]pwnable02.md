@@ -9,7 +9,6 @@ hackCTF pwnable 두번째 문제
 ![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
 
 ## ida - main
-***
 ```c
 int __cdecl main(int argc, const char **argv, const char **envp)
 {
@@ -23,7 +22,6 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 }
 ```
 ## ida - sup
-***
 ```c
 int sup()
 {
@@ -32,13 +30,13 @@ int sup()
 ```
 
 ## ida - shell
-***
 ```c
 int shell()
 {
   return system("/bin/dash"); // 쉘을 띄울 수 있다!
 }
 ```
+<br>
 
 메모리 구조를 정리해보자.<br><br>
 
@@ -58,15 +56,13 @@ int shell()
 <br>
 목표 : shell 함수 실행 <br>
 취약점 : fgets(&s, 133, stdin)<br><br>
-∴ v5를 shell의 주소로 덮어 shell()을 실행시키자.
-
+∴ v5를 shell의 주소로 덮어 shell()을 실행시키자.<br><br><br>
 
 +) 쉘의 주소는 다음과 같다.  
 ![0201](https://drive.google.com/uc?id=18Rgv1QIq_0rxABl08a1KZjNBc3GLtHi4)
 
 
 ## exploit.py
-***
 ```python
 #!/usr/bin/python
 from pwn import *
