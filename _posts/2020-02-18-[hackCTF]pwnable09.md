@@ -53,16 +53,16 @@ void j0n9hyun()
   }
 }
 ```
-welcome함수에서 scanf가 v1에 저장할 때 ret을 덮으면 될 것 같다.<br><br>
+welcome함수 scanf에서 ret까지 덮으면 될 것 같다.<br><br>
 ![0901](https://drive.google.com/uc?id=1ZwKH2ER8FIFKTDodoJn65xziNKzyQNkg)  
-PIE가 걸려 있고 welcome 함수의 주소를 제공하므로 j0n9hyun 함수의 정확한 주소는 "welcome 함수의 주소 + (j0n9hyun offset - welcome offset)"을 통해 구하자.  
+PIE가 걸려 있고 파일을 실행시키면 welcome 함수의 주소를 제공하므로 j0n9hyun 함수의 정확한 주소를 구할 수 있다.  
+j0n9hyun 함수의 주소 = welcome 함수의 주소 + (j0n9hyun offset - welcome offset)
 <br>
 
 정리해보자.<br><br>
 목표 : welcome 함수의 ret을 덮어 j0n9hyun 함수 실행시키기<br>
 취약점 : _isoc99_scanf("%s", &v1)<br><br><br>
 
-***
 
 ## exploit.py
 ```python
