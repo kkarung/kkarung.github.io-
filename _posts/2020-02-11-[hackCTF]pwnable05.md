@@ -26,8 +26,8 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 ```c
 int callMeMaybe()
 {
-  char *path; // [rsp+0h] [rbp-20h]
-  const char *v2; // [rsp+8h] [rbp-18h]
+  char* path; // [rsp+0h] [rbp-20h]
+  const char* v2; // [rsp+8h] [rbp-18h]
   __int64 v3; // [rsp+10h] [rbp-10h]
 
   path = "/bin/bash";
