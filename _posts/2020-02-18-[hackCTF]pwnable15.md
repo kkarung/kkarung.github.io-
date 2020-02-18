@@ -59,7 +59,7 @@ p.interactive()
 ```
 
 ## 결과
-![1401](https://drive.google.com/uc?id=1c29YhzXiygH5fvEJk--Dkb5xEoBiBW7d)
+![1501](https://drive.google.com/uc?id=1c29YhzXiygH5fvEJk--Dkb5xEoBiBW7d)
 
 ## 참고
 <a href="http://egloos.zum.com/mcchae/v/11024689">python에서 c 코드 실행하기</a>  
