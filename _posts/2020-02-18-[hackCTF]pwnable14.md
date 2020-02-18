@@ -4,7 +4,7 @@ title:  "[hackCTF]1996"
 date:   2020-02-18
 ---
 
-hackCTF pwnable 13번째 문제
+hackCTF pwnable 14번째 문제
 
 ![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
 
