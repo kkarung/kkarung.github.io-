@@ -89,9 +89,9 @@ void __noreturn reward()
 }
 ```
 
-처음엔 get_poem이나 get_author, rate_poem의 ret을 덮어서 문제를 해결하려 했다. poem이나 author은 .bss 영역에 존재하므로 ret을 덮을 수 없었다. 대신 score의 값을 1000000로 변조하고자 했다.
+처음엔 get_poem이나 get_author, rate_poem 함수의 ret을 덮어서 문제를 해결하려 했다. 하지만 poem이나 author은 .bss 영역에 존재하므로 ret을 덮을 수 없었다. 대신 score의 값을 1000000로 변조하고자 했다.
 
-author는 .bss:00000000006024A0에 위치하고 score는 .bss:00000000006024E0에 위치한다. author을 입력 받을 때 score 값까지 덮으면 될 것 같다. 주의해야 할 점은 main에서 score과 비교하는  1000000은 int형이므로 payload를 작성할 때 1000000에 해당하는 문자열로 변환해야 한다.
+author는 .bss:6024A0에 위치하고 score는 .bss:6024E0에 위치한다. get_author함수에서 author을 입력 받을 때 score 값까지 덮으면 될 것 같다. 주의해야 할 점은 main에서 score과 비교하는  1000000은 int형이므로 payload를 작성할 때 1000000에 해당하는 문자열로 변환해야 한다.
 
 ## exploit.py
 ```python
