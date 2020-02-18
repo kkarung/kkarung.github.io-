@@ -30,8 +30,7 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 
 |   ret   |          |
 |:-------:|:--------:|
-|   sfp   |  (4byte) |
-|   ebp   | esp+0x14 |
+|   sfp   | esp+0x14 |
 |   ...   |          |
 | s (esp) |    esp   |
 

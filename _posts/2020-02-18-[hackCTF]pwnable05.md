@@ -43,8 +43,7 @@ int callMeMaybe()
 
 | ret |           |
 |:---:|:---------:|
-| sfp |  (8byte)  |
-| rbp |           |
+| sfp |    rbp    |
 | ... |           |
 |  s  | rbp-0x110 |
 

@@ -29,8 +29,7 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 
 | ret |            |
 |:---:|:----------:|
-| sfp |   (8byte)  |
-| rbp |            |
+| sfp |     rbp    |
 | ... |            |
 |  v4 | rbp-0x6D30 |
 
