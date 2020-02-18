@@ -83,8 +83,8 @@ int two()
 ***
 <br>
 select_func에서 src의 값을 dest에 저장할 때 print_flag함수 주소로 v3까지 덮으면 return v3();에서 print_flag를 실행할 수 있을 것이다.<br><br>
-목표 : 계속 변하는 v4의 주소로 ret을 덮는 payload 완성하기<br>
-취약점 : gets(&v4)<br><br><br>
+목표 : select_func에서 v3를 print_flag 주소로 덮기<br>
+취약점 : strncpy(&dest, src, 0x1Fu)<br><br><br>
 +) print_flag Offset
 
 ![0801](https://drive.google.com/uc?id=1KA2RAABGsf9_88UeDV2rig8vzczPHF_X)
