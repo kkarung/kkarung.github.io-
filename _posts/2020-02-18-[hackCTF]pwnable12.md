@@ -75,5 +75,7 @@ p.sendline(payload)
 p.interactive()
 ```
 
+recvuntil() 함수를 사용하면 error가 뜬다. 왜인지는 모르겠다.
+
 ## 결과
 ![1201](https://drive.google.com/uc?id=1KEJsLXVtz5B-mJ6wJ_Iqwx7qOtAYbB4Z)
