@@ -89,6 +89,8 @@ select_func에서 src의 값을 dest에 저장할 때 print_flag함수 주소로
 
 ![0801](https://drive.google.com/uc?id=1KA2RAABGsf9_88UeDV2rig8vzczPHF_X)
 
+offset을 알기 때문에 off-by-one 기법이 적용되었음ㅇㅇ
+
 ## exploit.py
 ```python
 #!/usr/bin/python
