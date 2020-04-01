@@ -2,8 +2,8 @@
 layout: post
 title:  "[hackCTF]Basic BOF #1"
 date:   2020-02-09
-categories: [hackCTF]
-tags: [hackCTF]
+categories: [hackCTF] [pwnable]
+tags: [hackCTF] [pwnable]
 ---
 hackCTF pwnable 첫번째 문제
 
