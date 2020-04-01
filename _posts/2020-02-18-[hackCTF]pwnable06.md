@@ -4,7 +4,7 @@ title:  "[hackCTF]x64 Simple_size_BOF"
 date:   2020-02-18
 ---
 
-hackCTF pwnable 여섯번째 문제
+hackCTF pwnable 6번째 문제
 
 ![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
 
