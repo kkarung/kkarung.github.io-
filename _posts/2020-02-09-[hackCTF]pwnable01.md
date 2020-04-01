@@ -6,7 +6,7 @@ categories: hackCTF/pwnable
 tags: [hackCTF, pwnable]
 permalink: '/hackCTF/pwnable'
 ---
-hackCTF pwnable 첫번째 문제
+hackCTF pwnable 1번째 문제
 
 ![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
 

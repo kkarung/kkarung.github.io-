@@ -7,7 +7,7 @@ tags: [hackCTF] [pwnable]
 permalink: 'hackCTF/pwnable'
 ---
 
-hackCTF pwnable 두번째 문제
+hackCTF pwnable 2번째 문제
 
 ![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
 
