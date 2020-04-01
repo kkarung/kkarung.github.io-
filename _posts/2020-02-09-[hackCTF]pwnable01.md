@@ -2,7 +2,7 @@
 layout: post
 title:  "[hackCTF]Basic BOF #1"
 date:   2020-02-09
-categories: hackCTF
+categories: [hackCTF]
 tags: [hackCTF] [pwnable]
 permalink: '/hackCTF'
 ---
