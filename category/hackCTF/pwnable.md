@@ -1,4 +1,4 @@
 ---
 layout: category
-title: hackCTF
+title: hackCTF/pwnable
 ---
