@@ -2,11 +2,14 @@
 layout: post
 title:  "[hackCTF]RTL core"
 date:   2020-02-18
+categories: [hackCTF]
+tags: [hackCTF]
+permalink: '/hackCTF'
 ---
 
 hackCTF pwnable 16번째 문제
 
-![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
+![favicon](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/favicons.png?raw=true)
 
 ## ida - main
 ```c
@@ -70,7 +73,7 @@ int __cdecl check_passcode(int a1)
 
 check_passcode 함수의 결과가 hashcode와 동일했을 때 core 함수가 실행된다. 우선 check_passcode 함수를 분석해서 hashcode와 일치하는 값을 만들자.<br><br><br>
 check_passcode 함수에서 a1은 문자열의 주소 값이다. v2는 a1의 4byte int 값, a1+4의 int값 ... a1+16의 int값을 더한 값이 된다. 그럼 hashcode int 값을 5개의 숫자의 값을 더하면 나올 수 있도록 5개의 int 값을 만들자. 5개의 int 값을 문자열로 패킹해서 payload(밑의 exploit.py에선 passcode)로 이어붙이자.<br><br><br>
-![1601](https://drive.google.com/uc?id=1_kPqoebU5Aw4mNrXGRW-qKHWaqFKxVrC)<br>
+![1601](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/1601.JPG?raw=true)<br>
 core 함수를 보면 알 수 있듯이 passcode를 정확히 입력하면 printf의 주소를 출력한다. ASLR이 적용되어 있으므로 printf와 다른 값들의 offset을 구해 RTL기법의 payload를 작성하자. libc를 제공하므로 printf, system, "/bin/sh"의 offset을 구할 수 있다.
 
 
@@ -116,4 +119,4 @@ p.interactive()
 ```
 
 ## 결과
-![1602](https://drive.google.com/uc?id=1ZmxOIzBHfmX-_kGcSrwPUwik3XGzZorY)
+![1602](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/1602.JPG?raw=true)

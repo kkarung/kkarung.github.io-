@@ -2,11 +2,14 @@
 layout: post
 title:  "[hackCTF]x64 Simple_size_BOF"
 date:   2020-02-18
+categories: [hackCTF]
+tags: [hackCTF]
+permalink: '/hackCTF'
 ---
 
 hackCTF pwnable 6번째 문제
 
-![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
+![favicon](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/favicons.png?raw=true)
 
 ## ida - main
 ```c
@@ -36,9 +39,9 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 ***
 <br>
 
-![0602](https://drive.google.com/uc?id=1IKf6P8UjdQnO0iOExB2Syd8_4ONi70Ve)  
+![0602](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/0602.JPG?raw=true)  
 NX 보호기법이 미적용되었으므로 stack에서 쉘코드를 실행시킬 수 있다.  gets로 v4에 쉘코드를 저장하고 ret을 v4의 시작주소로 덮어 문제를 해결하자.<br><br><br>
-![0601](https://drive.google.com/uc?id=1OvYOaP63MM0QloMKUdMvTyWAvb09Ncue)  
+![0601](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/0601.JPG?raw=true)  
 이 때 ASLR 보호기법이 적용되어 파일을 실행할 때마다 주소가 변하므로 처음 v4의 주소를 출력하면 그 주소를 받아 payload를 완성해야 한다.<br><br>
 목표 : 계속 변하는 v4의 주소로 ret을 덮는 payload 완성하기<br>
 취약점 : gets(&v4)<br><br><br>
@@ -68,4 +71,4 @@ p.interactive()
 ```
 
 ## 결과
-![0603](https://drive.google.com/uc?id=1YE2LhE9ENLXGPJCWHLNMffHGCiNN3kcr)
+![0603](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/0603.JPG?raw=true)

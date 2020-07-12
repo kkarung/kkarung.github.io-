@@ -2,11 +2,14 @@
 layout: post
 title:  "[hackCTF]Poet"
 date:   2020-02-18
+categories: [hackCTF]
+tags: [hackCTF]
+permalink: '/hackCTF'
 ---
 
 hackCTF pwnable 13번째 문제
 
-![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
+![favicon](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/favicons.png?raw=true)
 
 ## ida - main
 ```c
@@ -114,4 +117,4 @@ p.interactive()
 ```
 
 ## 결과
-![1301](https://drive.google.com/uc?id=1N2P6ySBqL7V_xx4a-1eJ5y1TBQcsuFUX)
+![1301](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/1301.JPG?raw=true)

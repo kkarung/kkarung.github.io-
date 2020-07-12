@@ -2,11 +2,14 @@
 layout: post
 title:  "[hackCTF]Offset"
 date:   2020-02-18
+categories: [hackCTF]
+tags: [hackCTF]
+permalink: '/hackCTF'
 ---
 
 hackCTF pwnable 8번째 문제
 
-![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
+![favicon](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/favicons.png?raw=true)
 
 ## ida - main
 ```c
@@ -87,7 +90,7 @@ select_func에서 src의 값을 dest에 저장할 때 print_flag함수 주소로
 취약점 : strncpy(&dest, src, 0x1Fu)<br><br><br>
 +) print_flag Offset
 
-![0801](https://drive.google.com/uc?id=1KA2RAABGsf9_88UeDV2rig8vzczPHF_X)
+![0801](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/0801.JPG?raw=true)
 
 offset을 알기 때문에 off-by-one 기법이 적용되었음ㅇㅇ
 
@@ -106,4 +109,4 @@ p.interactive()
 ```
 
 ## 결과
-![0802](https://drive.google.com/uc?id=1YaANIi0dWPXCjXTlp2WlS9nFo8QoMulG)
+![0802](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/0802.JPG?raw=true)

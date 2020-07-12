@@ -3,7 +3,7 @@ layout: post
 title:  "[hackCTF]Basic BOF #1"
 date:   2020-02-09
 categories: [hackCTF]
-tags: [hackCTF] [pwnable]
+tags: [hackCTF]
 permalink: '/hackCTF'
 ---
 hackCTF pwnable 1번째 문제
@@ -71,7 +71,7 @@ hackCTF pwnable 1번째 문제
 -559038737는 16진수로 변환하면 0xDEADBEEF가 된다. 40byte를 아무 값으로 채운다음 p32 방식으로 0xDEADBEEF 값을 패킹해 payload 값을 만든다.
 
 ## 결과  
-![0102](https://drive.google.com/uc?id=1DCHfkrbOkWFKlbtl9krspfNhFJzKnpQU)
+![0102](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/0102.JPG?raw=true)
 
 
 p32 : little endian 방식으로 패킹해줌 (u32 : 언패킹)

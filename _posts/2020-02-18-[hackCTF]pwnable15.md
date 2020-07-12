@@ -2,11 +2,14 @@
 layout: post
 title:  "[hackCTF]Random key"
 date:   2020-02-18
+categories: [hackCTF]
+tags: [hackCTF]
+permalink: '/hackCTF'
 ---
 
 hackCTF pwnable 15번째 문제
 
-![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
+![favicon](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/favicons.png?raw=true)
 
 ## ida - main
 ```c
@@ -59,7 +62,7 @@ p.interactive()
 ```
 
 ## 결과
-![1501](https://drive.google.com/uc?id=1c29YhzXiygH5fvEJk--Dkb5xEoBiBW7d)
+![1501](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/1501.JPG?raw=true)
 
 ## 참고
 <a href="http://egloos.zum.com/mcchae/v/11024689">python에서 c 코드 실행하기</a>  

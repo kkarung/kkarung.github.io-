@@ -3,13 +3,13 @@ layout: post
 title:  "[hackCTF]Basic BOF #2"
 date:   2020-02-09
 categories: [hackCTF]
-tags: [hackCTF] [pwnable]
+tags: [hackCTF]
 permalink: '/hackCTF'
 ---
 
 hackCTF pwnable 2번째 문제
 
-![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
+![favicon](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/favicons.png?raw=true)
 
 ## ida - main
 ```c
@@ -62,7 +62,7 @@ int shell()
 ∴ v5를 shell의 주소로 덮어 shell()을 실행시키자.<br><br><br>
 
 +) 쉘의 주소는 다음과 같다.  
-![0201](https://drive.google.com/uc?id=18Rgv1QIq_0rxABl08a1KZjNBc3GLtHi4)
+![0201](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/0201.JPG?raw=true)
 
 
 ## exploit.py
@@ -79,4 +79,4 @@ p.sendline(payload)
 p.interactive()
 ```
 ## 결과  
-![0202](https://drive.google.com/uc?id=1GApVrN8IkoCUKXN559Ldluu8rjXOXgtH)
+![0202](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/0202.JPG?raw=true)

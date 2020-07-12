@@ -2,11 +2,14 @@
 layout: post
 title:  "[hackCTF]x64 Buffer Overflow"
 date:   2020-02-18
+categories: [hackCTF]
+tags: [hackCTF]
+permalink: '/hackCTF'
 ---
 
 hackCTF pwnable 다섯번째 문제
 
-![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
+![favicon](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/favicons.png?raw=true)
 
 
 ## ida - main
@@ -54,7 +57,7 @@ callMeMaybe 함수를 실행시키면 쉘을 띄울 수 있다. 이전 문제와
 취약점 : scanf("%s", &s, envp)<br><br><br>
 +) callMeMaybe 함수의 주소는 다음과 같다.
 
-![0501](https://drive.google.com/uc?id=1LnLNJrmt7KXM1S5HHWFkw0vQywbEDzOd)
+![0501](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/0501.JPG?raw=true)
 
 ## exploit.py
 ```python
@@ -71,4 +74,4 @@ p.interactive()
 ```
 
 ## 결과
-![0502](https://drive.google.com/uc?id=1rK_l0M2NmPspC1udiy0B72-BrBogAAN8)
+![0502](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/0502.JPG?raw=true)

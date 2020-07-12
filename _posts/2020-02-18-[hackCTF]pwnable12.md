@@ -2,11 +2,14 @@
 layout: post
 title:  "[hackCTF]g++ pwn"
 date:   2020-02-18
+categories: [hackCTF]
+tags: [hackCTF]
+permalink: '/hackCTF'
 ---
 
 hackCTF pwnable 12번째 문제
 
-![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
+![favicon](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/favicons.png?raw=true)
 
 ## ida - main
 ```cpp
@@ -78,4 +81,4 @@ p.interactive()
 recvuntil() 함수를 사용하면 error가 뜬다. 왜인지는 모르겠다.
 
 ## 결과
-![1201](https://drive.google.com/uc?id=1KEJsLXVtz5B-mJ6wJ_Iqwx7qOtAYbB4Z)
+![1201](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/1201.JPG?raw=true)

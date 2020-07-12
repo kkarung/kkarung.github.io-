@@ -2,11 +2,14 @@
 layout: post
 title:  "[hackCTF]1996"
 date:   2020-02-18
+categories: [hackCTF]
+tags: [hackCTF]
+permalink: '/hackCTF'
 ---
 
 hackCTF pwnable 14번째 문제
 
-![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
+![favicon](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/favicons.png?raw=true)
 
 ## ida - main
 ```c
@@ -62,4 +65,4 @@ p.interactive()
 ```
 
 ## 결과
-![1401](https://drive.google.com/uc?id=1c29YhzXiygH5fvEJk--Dkb5xEoBiBW7d)
+![1401](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/1401.JPG?raw=true)

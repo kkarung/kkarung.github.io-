@@ -2,11 +2,14 @@
 layout: post
 title:  "[hackCTF]RTL_World"
 date:   2020-02-18
+categories: [hackCTF]
+tags: [hackCTF]
+permalink: '/hackCTF'
 ---
 
 hackCTF pwnable 11번째 문제
 
-![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
+![favicon](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/favicons.png?raw=true)
 
 ## ida - main
 ```c
@@ -220,4 +223,4 @@ p.send(payload)
 p.interactive()
 ```
 ## 결과
-![1101](https://drive.google.com/uc?id=1jG3-peqfguMcYKIN_huiZiN5rfiv3m_C)
+![1101](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/1101.JPG?raw=true)

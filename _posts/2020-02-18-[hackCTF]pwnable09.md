@@ -2,11 +2,14 @@
 layout: post
 title:  "[hackCTF]BOF_PIE"
 date:   2020-02-18
+categories: [hackCTF]
+tags: [hackCTF]
+permalink: '/hackCTF'
 ---
 
 hackCTF pwnable 9번째 문제
 
-![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
+![favicon](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/favicons.png?raw=true)
 
 ## ida - main
 ```c
@@ -54,7 +57,7 @@ void j0n9hyun()
 }
 ```
 welcome함수 scanf에서 ret까지 덮어 j0n9hyun 함수를 실행시키면 될 것 같다.<br><br>
-![0901](https://drive.google.com/uc?id=1ZwKH2ER8FIFKTDodoJn65xziNKzyQNkg)  
+![0901](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/0901.JPG?raw=true)  
 PIE가 걸려 있고 파일을 실행시키면 welcome 함수의 주소를 제공하므로 j0n9hyun 함수의 정확한 주소를 구할 수 있다.  
 j0n9hyun 함수의 주소 = welcome 함수의 주소 + (j0n9hyun offset - welcome offset)
 <br>
@@ -85,4 +88,4 @@ p.interactive()
 ```
 
 ## 결과
-![0902](https://drive.google.com/uc?id=1P157mVwwxZkmBAeBM12fMtY27HRuqBN6)
+![0902](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/hackCTF/0902.JPG?raw=true)
