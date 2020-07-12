@@ -8,7 +8,7 @@ permalink: '/hackCTF'
 ---
 hackCTF pwnable 1번째 문제
 
-![favicon](https://drive.google.com/uc?id=1EPkDaLZatWWYaPyJ3wVlOrAu-eubvG9c)
+![favicon](https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/favicons.png?raw=true)
 
 ## ida
 ```c
