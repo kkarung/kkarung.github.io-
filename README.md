@@ -6,6 +6,7 @@ A configurable jekyll theme for simply beautiful blogs.
 
 ![texture theme preview](/screen1.png)
 
+실험 중
 
 ## Installation on Github Pages
 
