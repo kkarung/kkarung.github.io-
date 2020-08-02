@@ -3,7 +3,7 @@
 @import 'begin';
 @import 'syntax';
 
-$linkColor: #999;
+$linkColor: #5e7e9b; // 아쿠아마린색 수정함
 $mobileW: 768px;
 $smallMobileW: 480px;
 $bigScreenW: 1600px;
@@ -220,7 +220,7 @@ header {
 
 .post-container {
 	img {
-		margin: 20px 0;
+		margin: 10px 20px; // 수정함
 	}
 }
 
