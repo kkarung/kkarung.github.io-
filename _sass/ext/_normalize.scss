@@ -420,9 +420,10 @@ optgroup {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    border: 1px solid #000000; // 수정함
 }
 
 td,
 th {
-    padding: 0;
+    padding: 5em; // 수정함
 }
