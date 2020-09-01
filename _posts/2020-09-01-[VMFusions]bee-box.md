@@ -15,9 +15,11 @@ permalink: '/Others/02'
 
 <br><br>
 
-### 2. 다운받은 파일의 압축을 풀어줍니다. 그럼 아래와 같이 폴더가 생성되겠죠?
+### 2. 다운받은 파일의 압축을 풀어줍니다.
 
 <img src="https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/others/0202.png?raw=true">
+
+INSTALL.txt, README.txt는 각자 읽어보시고 저희는 설치를 마저 해봅시다.
 
 <br><br>
 
@@ -64,3 +66,5 @@ bWAPP을 클릭하면 bee-box 페이지에 접속할 수 있습니다.
 후에 Change Password 카테고리를 통해 비밀번호를 변경할 수 있습니다.
 
 p.s 터미널에서 접속할 경우에는 키보드가 belgium 방식으로 되어 있어 다르게 입력될 수 있습니다. 그럴 땐 키보드 설정을 바꿔주세요.
+
+<br><br>
