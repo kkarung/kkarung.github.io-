@@ -11,16 +11,14 @@ permalink: '/Others/02'
 
 1. <a href="https://sourceforge.net/projects/bwapp/files/bee-box/" target="_blank">bee-box 페이지</a>에 가서 파일을 다운 받습니다.
 
-<img src="https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/others/0201.png?raw=true">
+    <img src="https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/others/0201.png?raw=true">
 
 <br><br>
 
-{:start="2"}
 2. 다운받은 파일의 압축을 풀어줍니다. 그럼 아래와 같이 폴더가 생성되겠죠?
 
-<img src="https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/others/0202.png?raw=true">
+    <img src="https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/others/0202.png?raw=true">
 
-{:start="3"}
 3. VMware fusion을 열어 File > Open을 클릭합니다.
 
 <img src="https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/others/0203.png?raw=true">
