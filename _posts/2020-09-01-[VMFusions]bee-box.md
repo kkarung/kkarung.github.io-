@@ -19,7 +19,7 @@ permalink: '/Others/02'
 
 <img src="https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/others/0202.png?raw=true">
 
-INSTALL.txt, README.txt는 각자 읽어보시고 저희는 설치를 마저 해봅시다.
+압축을 풀면 4개의 요소가 있습니다. INSTALL.txt, README.txt는 한 번씩 읽어보세요.
 
 <br><br>
 
@@ -35,11 +35,11 @@ INSTALL.txt, README.txt는 각자 읽어보시고 저희는 설치를 마저 해
 
 <br><br>
 
-### 5. 자동으로 실행됩니다. 캡쳐를 못 했지마나 알림이 뜨면서 어떤 선택을 하라는 창이 나오는데 거기서는 **I copied it**을 클릭합니다.
+### 5. 자동으로 실행됩니다. 캡쳐를 못 했지만 알림이 뜨면서 어떤 선택을 하라는 창이 나오는데 거기서는 **I copied it**을 클릭합니다.
 
 <br><br>
 
-### 6. 이제 terminal을 엽시다. 표시한 버튼을 클릭합니다.
+### 6. 이제 terminal을 엽시다. 왼쪽 위에 표시한 버튼을 클릭합니다.
 
 <img src="https://github.com/kkarung/kkarung.github.io/blob/master/assets/image/others/0205.png?raw=true">
 
