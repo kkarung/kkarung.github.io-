@@ -1,7 +1,7 @@
 @import 'ext/fonts';
 @import 'ext/normalize';
-@import 'begin';
-@import 'syntax';
+@import '_begin';
+@import '_syntax';
 
 $linkColor: #5e7e9b; // 아쿠아마린색 수정함
 $mobileW: 768px;
@@ -104,7 +104,7 @@ header {
 //
 .container {
 	margin:0 150px;
-	max-width: 1200px; // 720px
+	max-width: 1200px; // body size
 
 	div.highlighter-rouge {
 		right: 150px;
